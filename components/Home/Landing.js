@@ -8,6 +8,7 @@ import {
   Heading,
   Input,
 } from "@chakra-ui/core";
+import Formpack from "../Card/Formpack";
 
 const Landing = () => {
   return (
@@ -39,25 +40,7 @@ const Landing = () => {
         <Text fontSize="xl">
           Ready to watch? Enter your email to create or restart your membership.
         </Text>
-        <Flex w={{ md: "800px" }} mt={{ md: 8 }}>
-          <Input
-            size="lg"
-            type="text"
-            placeholder="Email address"
-            h={{ md: 16 }}
-            borderRadius="none"
-          />
-          <Text
-            as="button"
-            bg="#e50914"
-            fontSize="3xl"
-            px={{ md: 12 }}
-            w={{ md: "400px" }}
-            textTransform="uppercase"
-          >
-            Get Started
-          </Text>
-        </Flex>
+        <Formpack />
       </Flex>
     </Box>
   );

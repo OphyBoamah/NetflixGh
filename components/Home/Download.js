@@ -3,16 +3,17 @@ import { Heading, Text, Box, Image, Flex } from "@chakra-ui/core";
 
 const Download = () => {
   return (
-    <Box bg="#000" color="#fff">
-      <Flex>
+    <Box bg="#000" color="#fff" borderBottom="9px solid #333">
+      <Flex justify="center" align="center">
         <Image src="/images/tv.png" />
-        <Box>
-          <Heading>Enjoy on your TV.</Heading>
-          <Text>
-            Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray
-            players, and more.
+        <Flex flexDir="column" w={{ md: "500px" }}>
+          <Heading as="h2" fontSize="5xl" mb={{ md: 6 }}>
+            Download your shows to watch offline.
+          </Heading>
+          <Text fontSize="2xl">
+            Save your favorites easily and always have something to watch.
           </Text>
-        </Box>
+        </Flex>
       </Flex>
     </Box>
   );
