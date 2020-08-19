@@ -1,22 +1,34 @@
 import React from "react";
-import { Box, Flex, Icon, Text } from "@chakra-ui/core";
+import {
+  Box,
+  Accordion,
+  AccordionPanel,
+  AccordionItem,
+  AccordionButton,
+} from "@chakra-ui/core";
+import { AddIcon, MinusIcon } from "@chakra-ui/icons";
 
-const FAQcard = ({ title }) => {
+const FAQcard = ({ title, content }) => {
   return (
-    <Box>
-      <Flex
-        bg="#333"
-        color="#fff"
-        w={{ md: 800 }}
-        p={{ md: 6 }}
-        mb={{ md: 4 }}
-        justify="space-between"
-        mx="auto"
-      >
-        <Text fontSize="2xl">{title}</Text>
-        <Icon name="{icon}" size="160px" color="#fff" />
-      </Flex>
-    </Box>
+    <Accordion allowMultiple w={{ md: "800px" }} mx="auto" bg="#222">
+      <AccordionItem>
+        {({ isExpanded }) => (
+          <>
+            <AccordionButton p={{ md: 8 }}>
+              <Box flex="1" textAlign="left">
+                {title}
+              </Box>
+              {isExpanded ? (
+                <MinusIcon fontSize="16px" />
+              ) : (
+                <AddIcon fontSize="16px" />
+              )}
+            </AccordionButton>
+            <AccordionPanel pb={4}>{content}</AccordionPanel>
+          </>
+        )}
+      </AccordionItem>
+    </Accordion>
   );
 };
 

@@ -13,7 +13,7 @@ import Formpack from "../Card/Formpack";
 const Landing = () => {
   return (
     <Box
-      bg="linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/images/NetflixBg.jpg')"
+      bg="linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/images/NetflixHeader.jpg')"
       bgSize="cover"
       bgPos="center"
       h="95vh"
