@@ -14,7 +14,7 @@ const Watch = () => {
             and TV without paying more.
           </Text>
         </Flex>
-        <Image src="/images/tv.png" />
+        <Image src="/images/device-pile.png" />
       </Flex>
     </Box>
   );

@@ -5,7 +5,7 @@ const Download = () => {
   return (
     <Box bg="#000" color="#fff" borderBottom="9px solid #333">
       <Flex justify="center" align="center">
-        <Image src="/images/tv.png" />
+        <Image src="/images/Netflixmobile.jpg" />
         <Flex flexDir="column" w={{ md: "500px" }}>
           <Heading as="h2" fontSize="5xl" mb={{ md: 6 }}>
             Download your shows to watch offline.
