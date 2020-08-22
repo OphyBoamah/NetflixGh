@@ -10,6 +10,7 @@ import {
   Checkbox,
   Link,
   Image,
+  Select,
 } from "@chakra-ui/core";
 
 const Signin = () => {
@@ -18,9 +19,9 @@ const Signin = () => {
       bg="linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/images/NetflixHeader.jpg')"
       bgPos="center"
       bgSize="cover"
-      h="100vh"
+      h="135vh"
     >
-      <Flex justify="space-between" px={{ md: 16 }} pt={{ md: 8 }}>
+      <Flex justify="space-between" px={{ md: 16 }} pt={{ md: 4 }}>
         <Image src="/images/netflix-logo.png" w={{ md: 145 }} />
       </Flex>
       <Box
@@ -86,6 +87,27 @@ const Signin = () => {
             </Text>
           </Box>
         </Box>
+      </Box>
+      <Box
+        bg="linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8))"
+        py={{ md: 12 }}
+        mt={{ md: 20 }}
+        pl={{ md: 24 }}
+        color="#aaa"
+      >
+        <Link href="#">Questions? Contact us.</Link>
+        <Flex py={{ md: 4 }}>
+          <Link href="#">Gift Card Terms</Link>
+          <Link ml={{ md: 20 }} href="#">
+            Terms of Use
+          </Link>
+          <Link ml={{ md: 20 }} href="#">
+            Privacy Statement
+          </Link>
+        </Flex>
+        <Select bg="#000" w={{ md: 108 }} color="#aaa" mt={{ md: 4 }}>
+          <option>English</option>
+        </Select>
       </Box>
     </Box>
   );
