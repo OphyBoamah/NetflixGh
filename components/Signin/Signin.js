@@ -12,6 +12,7 @@ import {
   Image,
   Select,
 } from "@chakra-ui/core";
+import Lightfooter from "./Lightfooter";
 
 const Signin = () => {
   return (
@@ -88,27 +89,7 @@ const Signin = () => {
           </Box>
         </Box>
       </Box>
-      <Box
-        bg="linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8))"
-        py={{ md: 12 }}
-        mt={{ md: 20 }}
-        pl={{ md: 24 }}
-        color="#aaa"
-      >
-        <Link href="#">Questions? Contact us.</Link>
-        <Flex py={{ md: 4 }}>
-          <Link href="#">Gift Card Terms</Link>
-          <Link ml={{ md: 20 }} href="#">
-            Terms of Use
-          </Link>
-          <Link ml={{ md: 20 }} href="#">
-            Privacy Statement
-          </Link>
-        </Flex>
-        <Select bg="#000" w={{ md: 108 }} color="#aaa" mt={{ md: 4 }}>
-          <option>English</option>
-        </Select>
-      </Box>
+      <Lightfooter py={{ md: 12 }} />
     </Box>
   );
 };

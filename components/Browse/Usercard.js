@@ -10,7 +10,7 @@ const Usercard = ({ image, name, link }) => {
             boxSize="150px"
             objectFit="cover"
             src={image}
-            alt="User One"
+            alt={name}
             border="3px solid #333"
           />
           <Text fontSize="xl" mt={{ md: 4 }}>
