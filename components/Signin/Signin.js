@@ -89,7 +89,7 @@ const Signin = () => {
           </Box>
         </Box>
       </Box>
-      <Lightfooter py={{ md: 12 }} />
+      <Lightfooter py={{ md: 12 }} bg="linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8))" />
     </Box>
   );
 };
