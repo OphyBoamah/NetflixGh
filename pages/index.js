@@ -10,6 +10,10 @@ import Footer from "../components/Home/Footer";
 export default function Home() {
   return (
     <Box w="100%">
+      <Head>
+        <title>NetflixGh</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <Landing />
       <Enjoy />
       <Download />
