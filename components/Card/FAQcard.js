@@ -21,7 +21,11 @@ const FAQcard = ({ title, content, text }) => {
         {({ isExpanded }) => (
           <>
             <AccordionButton p={{ md: 8 }}>
-              <Box flex="1" textAlign="left" fontSize="3xl">
+              <Box
+                flex="1"
+                textAlign="left"
+                fontSize={{ base: "xl", md: "3xl" }}
+              >
                 {title}
               </Box>
               {isExpanded ? (

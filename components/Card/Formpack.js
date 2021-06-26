@@ -4,20 +4,28 @@ import { Box, Flex, Input, Text, Link } from "@chakra-ui/core";
 const Formpack = () => {
   return (
     <Box>
-      <Flex w={{ md: "800px" }} mt={{ md: 8 }}>
+      <Flex
+        flexDir={{ base: "column", md: "row" }}
+        w={{ md: "800px" }}
+        mt={{ md: 8 }}
+        mx={{ base: "auto" }}
+      >
         <Input
           size="lg"
           type="text"
           placeholder="Email address"
           h={{ md: 16 }}
           borderRadius="none"
+          // w={{ base: "300px" }}
+          // mx={{ base: "auto" }}
         />
 
         <Text
           as="button"
           bg="#e50914"
-          fontSize="3xl"
-          px={{ md: 12 }}
+          fontSize={{ base: "md", md: "2xl" }}
+          py={{ base: 2, md: 4 }}
+          // px={{ base: 2, md: 4 }}
           w={{ md: "400px" }}
           textTransform="uppercase"
         >

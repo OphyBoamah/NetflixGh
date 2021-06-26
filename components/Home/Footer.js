@@ -3,10 +3,20 @@ import { Box, Text, Grid } from "@chakra-ui/core";
 
 const Footer = () => {
   return (
-    <Box bg="#000" borderTop="9px solid #333" color="#777" py={{ md: 20 }}>
+    <Box
+      bg="#000"
+      borderTop="9px solid #333"
+      color="#777"
+      py={{ md: 20 }}
+      fontSize={{ base: "sm" }}
+      p={{ base: 4 }}
+      // fontSize={{ base: "sm" }}
+    >
       <Box w={{ md: "900px" }} mx="auto">
         <Text mb={{ md: 4 }}>Questions? Contact us.</Text>
-        <Grid templateColumns="repeat(4, 1fr)">
+        <Grid
+          templateColumns={{ base: "repeat(2, 1fr)", md: "repeat(4, 1fr)" }}
+        >
           <Box>
             <Text>FAQ</Text>
             <Text>Investor Relations</Text>
