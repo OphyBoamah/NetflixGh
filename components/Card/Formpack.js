@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Flex, Input, Text } from "@chakra-ui/core";
+import { Box, Flex, Input, Text, Link } from "@chakra-ui/core";
 
 const Formpack = () => {
   return (
@@ -12,6 +12,7 @@ const Formpack = () => {
           h={{ md: 16 }}
           borderRadius="none"
         />
+
         <Text
           as="button"
           bg="#e50914"
@@ -20,7 +21,7 @@ const Formpack = () => {
           w={{ md: "400px" }}
           textTransform="uppercase"
         >
-          Get Started
+          <Link href="/browse">Get Started</Link>
         </Text>
       </Flex>
     </Box>

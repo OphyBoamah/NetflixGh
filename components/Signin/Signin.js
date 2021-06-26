@@ -23,7 +23,9 @@ const Signin = () => {
       h="135vh"
     >
       <Flex justify="space-between" px={{ md: 16 }} pt={{ md: 4 }}>
-        <Image src="/images/netflix-logo.png" w={{ md: 145 }} />
+        <Link href="/">
+          <Image src="/images/netflix-logo.png" w={{ md: 145 }} />
+        </Link>
       </Flex>
       <Box
         as="form"
@@ -69,13 +71,15 @@ const Signin = () => {
             <Checkbox colorScheme="gray" defaultIsChecked>
               Remember me
             </Checkbox>
-            <Text>Need help?</Text>
+            <Link href="/help">
+              <Text>Need help?</Text>
+            </Link>
           </Flex>
           <Box flexDir="column" mt={{ md: 10 }}>
             <Text as="button">Login with Facebook</Text>
             <Text py={{ md: 4 }}>
               New to Netflix?{" "}
-              <Link color="#fff" href="index.js">
+              <Link color="#fff" href="/browse">
                 Sign up now
               </Link>
             </Text>
@@ -89,7 +93,10 @@ const Signin = () => {
           </Box>
         </Box>
       </Box>
-      <Lightfooter py={{ md: 12 }} bg="linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8))" />
+      <Lightfooter
+        py={{ md: 12 }}
+        bg="linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8))"
+      />
     </Box>
   );
 };

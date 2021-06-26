@@ -6,6 +6,7 @@ import {
   Image,
   Button,
   Heading,
+  Link,
   Input,
 } from "@chakra-ui/core";
 import Formpack from "../Card/Formpack";
@@ -20,8 +21,12 @@ const Landing = () => {
       color="#fff"
     >
       <Flex justify="space-between" px={{ md: 16 }} pt={{ md: 8 }}>
-        <Image src="/images/netflix-logo.png" w={{ md: 145 }} />
-        <Button bg="#e50914">Sign In</Button>
+        <Link href="/">
+          <Image src="/images/netflix-logo.png" w={{ md: 145 }} />
+        </Link>
+        <Link href="/login">
+          <Button bg="#e50914">Sign In</Button>
+        </Link>
       </Flex>
       <Flex
         flexDir="column"

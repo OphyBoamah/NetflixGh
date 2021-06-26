@@ -19,7 +19,9 @@ const browse = () => {
         pt={{ md: 4 }}
         h={{ md: "10vh" }}
       >
-        <Image src="/images/netflix-logo.png" w={{ md: 145 }} />
+        <Link href="/">
+          <Image src="/images/netflix-logo.png" w={{ md: 145 }} />
+        </Link>
       </Flex>
       <Flex
         flexDir="column"
@@ -64,6 +66,7 @@ const browse = () => {
           fontSize="xl"
           letterSpacing="3px"
           color="#aaa"
+          href="/login"
         >
           MANAGE PROFILES
         </Link>
