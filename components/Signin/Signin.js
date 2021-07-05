@@ -92,7 +92,7 @@ const Signin = () => {
             <Text fontSize="sm">
               This page is protected by Google reCAPTCHA to ensure you're not a
               bot.{" "}
-              <Link color="blue.600" href="index.js">
+              <Link color="blue.600" href="/">
                 Learn more.
               </Link>
             </Text>

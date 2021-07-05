@@ -25,12 +25,15 @@ const Helpform = () => {
           md: 400,
         }}
         mx="auto"
-        py={{ md: 10 }}
+        py={{ base: 6, md: 10 }}
+        px={{ base: 6 }}
       >
         <Heading as="h2" fontSize="3xl">
           Forgot Email/Password
         </Heading>
-        <Text pt={{ md: 4 }}>How would you like to reset your password?</Text>
+        <Text pt={{ md: 4 }} py={{ base: 6 }}>
+          How would you like to reset your password?
+        </Text>
 
         {/* <Emailradiocontent /> */}
         {/* <Textradiocontent /> */}

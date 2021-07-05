@@ -20,7 +20,7 @@ const Emailradiocontent = () => {
           borderRadius="none"
           border="1px solid #999"
         /> */}
-        <Text pb={{ md: 4 }}>
+        <Text pb={{ md: 4 }} py={{ base: 6 }}>
           We will send you an email with instructions on how to reset your
           password.
         </Text>
@@ -35,9 +35,9 @@ const Emailradiocontent = () => {
         <Button
           bg="blue.400"
           color="#fff"
-          w={{ md: "100%" }}
+          w="100%"
           py={{ md: 6 }}
-          my={{ md: 6 }}
+          my={{ base: 6, md: 6 }}
           borderRadius="none"
           border="1px solid #999"
         >

@@ -14,7 +14,7 @@ import {
 const Textradiocontent = () => {
   return (
     <Box>
-      <Text pb={{ md: 4 }}>
+      <Text pb={{ md: 4 }} py={{ base: 6 }}>
         We will text you a verification code to reset your password. Text fees
         may apply.
       </Text>
@@ -48,9 +48,9 @@ const Textradiocontent = () => {
       <Button
         bg="blue.400"
         color="#fff"
-        w={{ md: "100%" }}
+        w="100%"
         py={{ md: 6 }}
-        my={{ md: 6 }}
+        my={{ base: 6, md: 6 }}
         borderRadius="none"
         border="1px solid #999"
       >
