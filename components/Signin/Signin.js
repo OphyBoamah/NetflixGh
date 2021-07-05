@@ -23,9 +23,10 @@ const Signin = () => {
       }}
       bgPos="center"
       bgSize="cover"
-      h={{ md: "135vh", base: "35vh" }}
+      h={{ md: "135vh", base: "100vh" }}
+      px={{ base: 6 }}
     >
-      <Flex justify="space-between" px={{ md: 16 }} pt={{ md: 4 }}>
+      <Flex justify="space-between" px={{ md: 16 }} pt={{ base: 6, md: 4 }}>
         <Link href="/">
           <Image src="/images/netflix-logo.png" w={{ md: 145, base: 20 }} />
         </Link>
@@ -39,7 +40,7 @@ const Signin = () => {
         borderRadius="10px"
       >
         <Box w={{ md: 340 }} mx="auto" pt={{ md: 10 }} color="#aaa">
-          <Heading as="h2" fontSize="3xl" color="#fff" py={{ md: 8 }}>
+          <Heading as="h2" fontSize="3xl" color="#fff" py={8}>
             Sign In
           </Heading>
           <FormControl>
@@ -49,7 +50,8 @@ const Signin = () => {
               bg="#222"
               color="#666"
               border="none"
-              py={{ md: 6 }}
+              py={6}
+              mb={{ base: 6 }}
             />
             <Input
               type="password"
@@ -57,20 +59,21 @@ const Signin = () => {
               bg="#222"
               color="#333"
               border="none"
-              py={{ md: 6 }}
+              py={6}
               my={{ md: 6 }}
+              mb={{ base: 6 }}
             />
           </FormControl>
           <Button
             bg="#e50914"
             color="#fff"
-            w={{ md: 340 }}
+            w={{ base: 325, md: 340 }}
             py={{ md: 6 }}
             mt={{ md: 6 }}
           >
             Sign In
           </Button>
-          <Flex justify="space-between" mt={{ md: 2 }}>
+          <Flex justify="space-between" mt={{ md: 2 }} my={{ base: 10 }}>
             <Checkbox colorScheme="gray" defaultIsChecked>
               Remember me
             </Checkbox>
@@ -80,7 +83,7 @@ const Signin = () => {
           </Flex>
           <Box flexDir="column" mt={{ md: 10 }}>
             <Text as="button">Login with Facebook</Text>
-            <Text py={{ md: 4 }}>
+            <Text py={{ base: 8, md: 4 }}>
               New to Netflix?{" "}
               <Link color="#fff" href="/browse">
                 Sign up now
