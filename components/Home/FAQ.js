@@ -35,12 +35,12 @@ You can also download your favorite shows with the iOS, Android, or Windows 10 a
       />
       <FAQcard
         title="How do I cancel?"
-        text={24}
+        text={{ base: 16, md: 24 }}
         content="Netflix is flexible. There are no pesky contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime."
       />
       <FAQcard
         title="What can I watch on Netflix?"
-        text={24}
+        text={{ base: 16, md: 24 }}
         content="Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want."
       />
       <Flex flexDir="column" justify="center" align="center" mt={{ md: 4 }}>
