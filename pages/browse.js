@@ -13,16 +13,17 @@ const profiles = [
 const browse = () => {
   return (
     <Box bg="#000" color="#fff" h={{ md: "100vh" }}>
-      <Flex
+      <Box
+        display={{ base: "none", md: "flex" }}
         justify="space-between"
         px={{ md: 16 }}
         pt={{ md: 4 }}
         h={{ md: "10vh" }}
       >
         <Link href="/">
-          <Image src="/images/netflix-logo.png" w={{ md: 145 }} />
+          <Image src="/images/netflix-logo.png" w={{ base: 20, md: 145 }} />
         </Link>
-      </Flex>
+      </Box>
       <Flex
         flexDir="column"
         justify="center"
@@ -31,12 +32,16 @@ const browse = () => {
         mx="auto"
         h={{ md: "80vh" }}
       >
-        <Heading as="h1" fontSize="6xl">
+        <Heading
+          as="h1"
+          fontSize={{ base: "2xl", md: "6xl" }}
+          my={{ base: 10 }}
+        >
           Who's watching?
         </Heading>
         <Grid
           w={{ md: "70%" }}
-          templateColumns="repeat(5, 1fr)"
+          templateColumns={{ base: "repeat(1,1fr)", md: "repeat(5, 1fr)" }}
           grid={4}
           py={{ md: 10 }}
         >
@@ -67,6 +72,7 @@ const browse = () => {
           letterSpacing="3px"
           color="#aaa"
           href="/login"
+          my={{ base: 10 }}
         >
           MANAGE PROFILES
         </Link>

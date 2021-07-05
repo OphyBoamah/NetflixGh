@@ -17,14 +17,17 @@ import Lightfooter from "./Lightfooter";
 const Signin = () => {
   return (
     <Box
-      bg="linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/images/NetflixHeader.jpg')"
+      bg={{
+        base: "#000",
+        md: "linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/images/NetflixHeader.jpg')",
+      }}
       bgPos="center"
       bgSize="cover"
-      h="135vh"
+      h={{ md: "135vh", base: "35vh" }}
     >
       <Flex justify="space-between" px={{ md: 16 }} pt={{ md: 4 }}>
         <Link href="/">
-          <Image src="/images/netflix-logo.png" w={{ md: 145 }} />
+          <Image src="/images/netflix-logo.png" w={{ md: 145, base: 20 }} />
         </Link>
       </Flex>
       <Box
